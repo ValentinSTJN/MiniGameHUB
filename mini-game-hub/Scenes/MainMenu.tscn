@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" path="res://Scenes/UI/GameButton.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://bl35nxv6fm4c5" path="res://Scenes/Games/ExampleGame.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://ri33trog142a" path="res://Scenes/TP/tp3october.tscn" id="3_8saeu"]
+[ext_resource type="PackedScene" uid="uid://i0wvpqfvsoxq" path="res://Scenes/Games/ExerciceCreativeTools.tscn" id="3_ghw46"]
 
 [node name="MainMenu" type="Control" unique_id=731221665]
 layout_mode = 3
@@ -43,6 +44,11 @@ theme_override_constants/separation = 12
 layout_mode = 2
 text = "Example Game"
 target_scene = ExtResource("2")
+
+[node name="ExerciceCreativeTools" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=518888008 instance=ExtResource("1")]
+layout_mode = 2
+text = "Exercice – Creative Tools"
+target_scene = ExtResource("3_ghw46")
 
 [node name="TP3OctoberButton" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=1756359975 instance=ExtResource("1")]
 layout_mode = 2

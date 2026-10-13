@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://i0wvpqfvsoxq"]
+
+[ext_resource type="PackedScene" path="res://Scenes/UI/BackToMenuButton.tscn" id="1_lbp3u"]
+
+[node name="ExerciceCreativeTools" type="Node2D" unique_id=1734402426]
+
+[node name="BackToMenuButton" parent="." unique_id=652686471 instance=ExtResource("1_lbp3u")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 574.0
+offset_right = 224.0
+offset_bottom = 624.0
+grow_vertical = 0
