@@ -13,16 +13,23 @@ extends Node
 # Misc
 var IsTargetActive: bool
 var target: Sprite2D
+var notTarget: Sprite2D
 var timer: float
 
 func _ready() -> void:
 	IsTargetActive = false
 	target= targetDefault
+	notTarget = targetActive
 	timer = 0
 
 func _process(delta: float) -> void:
 	targetInput(delta)
 	move(delta)
+	
+	if target.modulate != Color.GREEN:
+		target.modulate = Color.GREEN
+	if notTarget.modulate != Color.RED:
+		notTarget.modulate = Color.RED
 
 func targetInput(delta: float) -> void:
 	if IsTargetActive:
@@ -30,11 +37,13 @@ func targetInput(delta: float) -> void:
 		if timer >= timerWall:
 			IsTargetActive = false
 			target = targetDefault
+			notTarget = targetActive
 			timer = 0
 
 	if !IsTargetActive and Input.is_action_just_pressed("GoTarget"):
 		IsTargetActive = true
 		target = targetActive
+		notTarget = targetDefault
 
 func move(delta: float) -> void:
 	# Calculate the distance and its normelization
