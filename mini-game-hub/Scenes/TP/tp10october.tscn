@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://i7b7mrodgt3h"]
+
+[ext_resource type="Script" uid="uid://dpm6g163i4qbk" path="res://Scripts/tp_3_october.gd" id="1_ejmff"]
+[ext_resource type="PackedScene" path="res://Scenes/UI/BackToMenuButton.tscn" id="2_y4rti"]
+[ext_resource type="Texture2D" uid="uid://bvyrbgt5pyiil" path="res://Assets/Cars/ambulance.png" id="3_2hepx"]
+[ext_resource type="Texture2D" uid="uid://c24ghtp2ct0he" path="res://Assets/Cars/buggy.png" id="4_dnkrh"]
+
+[node name="Root" type="Node2D" unique_id=909020743]
+script = ExtResource("1_ejmff")
+
+[node name="BackToMenuButton" parent="." unique_id=1072252120 instance=ExtResource("2_y4rti")]
+offset_left = 24.0
+offset_top = 574.0
+offset_right = 224.0
+offset_bottom = 624.0
+
+[node name="Ambulance" type="Sprite2D" parent="." unique_id=1047190613]
+texture = ExtResource("3_2hepx")
+centered = false
+
+[node name="Buggy" type="Sprite2D" parent="." unique_id=2136526721]
+texture = ExtResource("4_dnkrh")
+centered = false
