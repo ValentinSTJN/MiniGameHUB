@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://i0wvpqfvsoxq"]
 
 [ext_resource type="PackedScene" path="res://Scenes/UI/BackToMenuButton.tscn" id="1_lbp3u"]
+[ext_resource type="Script" uid="uid://ceg6gy260j74q" path="res://Scripts/exercice_creative_tools.gd" id="1_u8yq0"]
+[ext_resource type="Texture2D" uid="uid://ilvvk5axoq2o" path="res://Assets/Icons/target.png" id="3_2iwb3"]
+[ext_resource type="Texture2D" uid="uid://d0cjonq1ry2sm" path="res://Assets/Cars/convertible.png" id="4_2iwb3"]
 
 [node name="ExerciceCreativeTools" type="Node2D" unique_id=1734402426]
+script = ExtResource("1_u8yq0")
 
 [node name="BackToMenuButton" parent="." unique_id=652686471 instance=ExtResource("1_lbp3u")]
 anchors_preset = 2
@@ -13,3 +17,17 @@ offset_top = 574.0
 offset_right = 224.0
 offset_bottom = 624.0
 grow_vertical = 0
+
+[node name="Vehicle" type="Sprite2D" parent="." unique_id=372968430]
+texture = ExtResource("4_2iwb3")
+centered = false
+
+[node name="TargetActive" type="Sprite2D" parent="." unique_id=1362192924]
+position = Vector2(160, 360)
+texture = ExtResource("3_2iwb3")
+centered = false
+
+[node name="TargetDefault" type="Sprite2D" parent="." unique_id=1856593628]
+position = Vector2(760, 120)
+texture = ExtResource("3_2iwb3")
+centered = false
