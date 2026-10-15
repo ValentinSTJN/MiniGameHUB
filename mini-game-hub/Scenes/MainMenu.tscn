@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" path="res://Scenes/UI/GameButton.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://bl35nxv6fm4c5" path="res://Scenes/Games/ExampleGame.tscn" id="2"]
-[ext_resource type="PackedScene" uid="uid://ri33trog142a" path="res://Scenes/TP/tp3october.tscn" id="3_8saeu"]
 [ext_resource type="PackedScene" uid="uid://i0wvpqfvsoxq" path="res://Scenes/Games/ExerciceCreativeTools.tscn" id="3_ghw46"]
+[ext_resource type="PackedScene" uid="uid://dckfd03gquav3" path="res://Scenes/Games/ExerciceOperateurs.tscn" id="4_ghw46"]
 
 [node name="MainMenu" type="Control" unique_id=731221665]
 layout_mode = 3
@@ -50,12 +50,7 @@ layout_mode = 2
 text = "Exercice – Creative Tools"
 target_scene = ExtResource("3_ghw46")
 
-[node name="TP3OctoberButton" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=1756359975 instance=ExtResource("1")]
+[node name="ExerciceOperateurs" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=805087498 instance=ExtResource("1")]
 layout_mode = 2
-text = "TP 3 october"
-target_scene = ExtResource("3_8saeu")
-
-[node name="TP10OctoberButton2" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=491873525 instance=ExtResource("1")]
-layout_mode = 2
-text = "TP 10 october"
-target_scene = ExtResource("3_8saeu")
+text = "Exercice – Creative Tools"
+target_scene = ExtResource("4_ghw46")

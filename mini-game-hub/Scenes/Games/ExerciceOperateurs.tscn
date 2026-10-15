@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dckfd03gquav3"]
+
+[ext_resource type="Script" uid="uid://cel1nnu53hjhr" path="res://Scripts/exercice_operateurs.gd" id="1_6c2pu"]
+[ext_resource type="PackedScene" path="res://Scenes/UI/BackToMenuButton.tscn" id="1_6my12"]
+
+[node name="ExerciceOperateurs" type="Node2D" unique_id=1109731013]
+script = ExtResource("1_6c2pu")
+
+[node name="BackToMenuButton" parent="." unique_id=519361784 instance=ExtResource("1_6my12")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 574.0
+offset_right = 224.0
+offset_bottom = 624.0
+grow_vertical = 0
