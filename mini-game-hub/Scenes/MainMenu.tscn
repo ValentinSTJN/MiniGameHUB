@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bl35nxv6fm4c5" path="res://Scenes/Games/ExampleGame.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://i0wvpqfvsoxq" path="res://Scenes/Games/ExerciceCreativeTools.tscn" id="3_ghw46"]
 [ext_resource type="PackedScene" uid="uid://dckfd03gquav3" path="res://Scenes/Games/ExerciceOperateurs.tscn" id="4_ghw46"]
+[ext_resource type="Script" uid="uid://bmjhqa8y0h7yk" path="res://Scripts/exercice_character_sheet.gd" id="5_df05h"]
 
 [node name="MainMenu" type="Control" unique_id=731221665]
 layout_mode = 3
@@ -54,3 +55,8 @@ target_scene = ExtResource("3_ghw46")
 layout_mode = 2
 text = "Exercice – Operateurs"
 target_scene = ExtResource("4_ghw46")
+
+[node name="ExerciceCharacterSheet" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=219316599 instance=ExtResource("1")]
+layout_mode = 2
+text = "Exercice – Character sheet"
+script = ExtResource("5_df05h")
