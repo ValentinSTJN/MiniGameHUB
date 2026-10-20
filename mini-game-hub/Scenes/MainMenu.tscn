@@ -52,5 +52,5 @@ target_scene = ExtResource("3_ghw46")
 
 [node name="ExerciceOperateurs" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=805087498 instance=ExtResource("1")]
 layout_mode = 2
-text = "Exercice – Creative Tools"
+text = "Exercice – Operateurs"
 target_scene = ExtResource("4_ghw46")
